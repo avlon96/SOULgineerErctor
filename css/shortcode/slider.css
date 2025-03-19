@@ -6,6 +6,24 @@ NOTE: This is slider style file. All Header related style included in this file.
 --------------------------------------*/
 .slider-container {
   position: relative;
+  height: 20%;
+}
+
+#mainSlider img {
+  width: 600px;  
+  height: 700px; 
+  transition: transform 3s ease-in-out;
+  object-fit: cover; 
+  animation: zoomEffect 10s infinite alternate ease-in-out;
+}
+
+@keyframes zoomEffect {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.2);
+  }
 }
 .overlay::before {
   background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
@@ -27,14 +45,10 @@ NOTE: This is slider style file. All Header related style included in this file.
 .slide-caption-img {
   display: inline-block;
   float: right;
-  margin-right: 295px;
-  padding-top: 130px;
   position: relative;
   z-index: 9;
 }
-.slide-caption-img > img {
-  position: inherit;
-}
+/* x */
 .nivo-controlNav {
   bottom: 45px;
   padding: 0;
@@ -43,7 +57,7 @@ NOTE: This is slider style file. All Header related style included in this file.
   z-index: 99;
 }
 .nivo-controlNav a.active {
-  color: #ffe200;
+  color: #662d91;
   font-size: 30px;
 }
 .nivo-controlNav a {
@@ -69,7 +83,7 @@ NOTE: This is slider style file. All Header related style included in this file.
 }
 
 .middle-text .learn-more a {
-    border: 1px solid #ffe200;
+    border: 1px solid #662d91;
     color: #ffffff;
     display: inline-block !important;
     font-size: 16px;
@@ -79,7 +93,7 @@ NOTE: This is slider style file. All Header related style included in this file.
     text-transform: uppercase;
 }
 .middle-text .learn-more a:hover {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     color: #000;
 }
 .learn-more {
@@ -101,7 +115,7 @@ NOTE: This is slider style file. All Header related style included in this file.
     margin-bottom: 0px;
 }
 .social-box-inner li a:hover {
-    color: #ffe200;
+    color: #662d91;
 }
 
 

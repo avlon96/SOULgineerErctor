@@ -62,7 +62,7 @@ a:focus,
 }
 a:focus,
 a:hover {
-    color: #ffe200;
+    color: #662d91;
     text-decoration: none;
 }
 a,
@@ -133,22 +133,22 @@ label {
     color: #626262;
 }
 *::-moz-selection {
-    background: #ffe200;
+    background: #662d91;
     color: #fff;
     text-shadow: none;
 }
 ::-moz-selection {
-    background: #ffe200;
+    background: #662d91;
     color: #fff;
     text-shadow: none;
 }
 ::selection {
-    background: #ffe200;
+    background: #662d91;
     color: #fff;
     text-shadow: none;
 }
 .mark, mark {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     color: #ffffff;
 }
 span.tooltip-content {
@@ -234,7 +234,7 @@ option {
 }
 input:focus {
     background: transparent;
-    border: 2px solid #ffe200;
+    border: 2px solid #662d91;
 }
 textarea {
     resize: vertical;
@@ -246,7 +246,7 @@ textarea {
 }
 textarea:focus {
     background: transparent;
-    border: 2px solid #ffe200;
+    border: 2px solid #662d91;
     outline: none;
 }
 .input-group.divcenter.input-group .form-control { padding-left: 0px }

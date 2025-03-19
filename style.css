@@ -71,7 +71,7 @@ img{max-width: 100%}
     margin-bottom: 0;
 }
 .about-content {
-    border-bottom: 2px solid #ffe200;
+    border-bottom: 2px solid #662d91;
     margin-bottom: 30px;
     padding-bottom: 24px;
 }
@@ -122,8 +122,8 @@ img{max-width: 100%}
     margin-bottom: 0;
 }
 .single-services:hover {
-    border-bottom: 1px solid #ffe200;
-    border-right: 1px solid #ffe200;
+    border-bottom: 1px solid #662d91;
+    border-right: 1px solid #662d91;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
 }
 .services-section-img {
@@ -147,7 +147,7 @@ img{max-width: 100%}
     transition: all 0.3s ease 0s;
 }
 .our-project-tab-menu ul li.active a,.our-project-tab-menu ul li:hover a{
-    color: #ffe200;
+    color: #662d91;
 }
 .our-project-tab-menu ul li a{
     color: #252525;
@@ -159,8 +159,8 @@ img{max-width: 100%}
     margin-bottom: 32px;
 }
 .project-menu-filter > li.active, .project-menu-filter > li:hover,.our-project-tab-menu ul li:hover,.our-project-tab-menu ul li.active{
-    background: #444444 none repeat scroll 0 0;
-    color: #ffe200;
+    background: #662d91 none repeat scroll 0 0;
+    color: #fff;
 }
 .single-project.width {
     width: 50%;
@@ -204,7 +204,7 @@ roject-img::before {
     top: 0;
 }
 .project-view > a {
-  color: #ffe200;
+  color: #662d91;
   display: inline-block;
   font-size: 60px;
   transform: scale(0);
@@ -220,15 +220,15 @@ roject-img::before {
   width: 100%;
 }
 .project-img:hover {
-  border-bottom: 2px solid #ffe200;
-  border-right: 2px solid #ffe200;
+  border-bottom: 2px solid #662d91;
+  border-right: 2px solid #662d91;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
 }
 /*-------------------------
     7. Funfact area css
 ------------------------------*/
 .fun-fact {
-  background: rgba(0, 0, 0, 0) url("img/fun/bg.png") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("img/fun/5.png") no-repeat scroll center center / cover ;
   padding: 80px 0;
 }
 .fun-desc > h3 {
@@ -265,7 +265,7 @@ selectorSavingError {
   position: relative;
 }
 .team-hover {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     bottom: 0;
     padding: 25px 0;
     position: absolute;
@@ -276,7 +276,7 @@ selectorSavingError {
     transition-duration: .3s;
 }
 .member-title > h5 {
-    color: #252525;
+    color: #fff;
     font-weight: 400;
     margin-bottom: 2px;
     text-transform: uppercase;
@@ -287,7 +287,7 @@ selectorSavingError {
     text-transform: capitalize;
 }
 .member-social > a {
-    color: #444444;
+    color: #fff;
     font-size: 18px;
     margin-left: 30px;
 }
@@ -320,7 +320,7 @@ selectorSavingError {
     text-align: right;
 }
 .contact-us-inner > a {
-    border: 1px solid #ffe200;
+    border: 1px solid #662d91;
     color: #ffffff;
     display: inline-block;
     font-size: 16px;
@@ -330,7 +330,7 @@ selectorSavingError {
     text-transform: uppercase;
 }
 .contact-us-inner > a:hover {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
 }
 /*-----------------------
   10. Single blog css
@@ -346,7 +346,7 @@ selectorSavingError {
     width: 100%;
 }
 .thumbnail-view > a {
-    color: #ffe200;
+    color: #662d91;
     display: block;
     font-size: 36px;
     transform: scale(0);
@@ -438,7 +438,7 @@ selectorSavingError {
     width: 100%;
 }
 .test-title {
-    border-bottom: 1px solid #ffe200;
+    border-bottom: 1px solid #662d91;
     padding-top: 11px;
 }
 .test-title > h2 {
@@ -472,7 +472,7 @@ selectorSavingError {
     width: 100%;
 }
 .slick-dots > li.slick-active a {
-    color: #ffe200;
+    color: #662d91;
     font-size: 30px;
 }
 /*-----------------------
@@ -493,7 +493,7 @@ selectorSavingError {
     padding: 28px;
 }
 .single-brand a:hover {
-    border-color: #ffe200;
+    border-color: #662d91;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 /*-------------------------------
@@ -538,8 +538,9 @@ selectorSavingError {
     14. Footer css
 -------------------------*/
 .footer-area {
-  background: url(img/footer.jpg)no-repeat scroll center center / cover;
+  /* background: url(img/footer.jpg)no-repeat scroll center center / cover; */
   position: relative;
+  background-color: #fff;
 }
 .single-footer.navigation {
     margin-left: 60px;
@@ -590,8 +591,8 @@ selectorSavingError {
     margin: 0;
 }
 .single-footer-social > a:hover {
-    background: #ffe200 none repeat scroll 0 0;
-    border-color: #ffe200;
+    background: #662d91 none repeat scroll 0 0;
+    border-color: #662d91;
     color: #ffffff;
 }
 .single-footer-nav li {
@@ -604,7 +605,7 @@ selectorSavingError {
     text-transform: capitalize;
 }
 .single-footer-nav a:hover {
-    color: #ffe200;
+    color: #662d91;
 }
 .single-foote-newsletter {
     padding-top: 25px;
@@ -618,7 +619,7 @@ selectorSavingError {
 }
 .newsletter-form button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #ffe200;
+    border: 1px solid #662d91;
     color: #ffffff;
     font-size: 16px;
     height: 45px;
@@ -628,7 +629,7 @@ selectorSavingError {
     transition: all 0.3s ease 0s;
 }
 .newsletter-form button:hover {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
 }
 
 .copyright p {
@@ -638,7 +639,7 @@ selectorSavingError {
     text-transform: capitalize;
 }
 .copyright p a {
-    color: #ffe200;
+    color: #662d91;
     font-weight: bold;
 }
 .copyright p a:hover {
@@ -691,7 +692,7 @@ selectorSavingError {
     color: #ffffff;
 }
 .breadcrumbs-menu li a:hover {
-    color: #ffe200;
+    color: #662d91;
 }
 .breadcrumbs-title {
     position: relative;
@@ -715,7 +716,7 @@ selectorSavingError {
     z-index: 9;
 }
 .video-view > a {
-    color: #ffe200;
+    color: #662d91;
     font-size: 48px;
 }
 /*-------------
@@ -755,11 +756,11 @@ selectorSavingError {
     margin-bottom: 0;
 }
 .banner-top-text {
-    border-bottom: 1px solid #ffe200;
+    border-bottom: 1px solid #662d91;
     padding-bottom: 27px;
 }
 .project_view > a {
-    border: 1px solid #ffe200;
+    border: 1px solid #662d91;
     display: inline-block;
     font-size: 16px;
     height: 45px;
@@ -781,7 +782,7 @@ selectorSavingError {
     color: #ffffff;
 }
 .project_view > a:hover {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
 }
 .project_list .owl-pagination .owl-page {
     color: #444444;
@@ -897,7 +898,7 @@ selectorSavingError {
     color: #909090;
 }
 .input-field > span {
-  color: #ffe200;
+  color: #662d91;
   font-size: 16px;
   left: 18%;
   position: absolute;
@@ -917,7 +918,7 @@ selectorSavingError {
     padding: 20px;
 }
 .form-submite > button {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     border: 1px solid rgba(0, 0, 0, 0);
     color: #ffffff;
     font-size: 16px;
@@ -931,8 +932,8 @@ selectorSavingError {
 }
 .form-submite > button:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-color: #ffe200;
-    color: #ffe200;
+    border-color: #662d91;
+    color: #662d91;
 }
 .get-informed {
   padding-left: 30px;
@@ -948,7 +949,7 @@ selectorSavingError {
 }
 
 .inform-title > h2 {
-    color: #ffe200;
+    color: #662d91;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
@@ -1009,7 +1010,7 @@ selectorSavingError {
   text-transform: capitalize;
 }
 .articles .blog-action-right p a i{
-  color: #ffe200;
+  color: #662d91;
 }
 .articles .post-like {
   margin-right: 17px;
@@ -1030,7 +1031,7 @@ selectorSavingError {
     padding: 5px 0 5px 46px;
 }
 .post-blockqoute > p {
-  border-left: 3px solid #ffe200;
+  border-left: 3px solid #662d91;
   padding-bottom: 17px;
   padding-left: 20px;
   padding-top: 8px;
@@ -1063,10 +1064,10 @@ selectorSavingError {
     margin-left: 24px;
 }
 .share-social > a:hover {
-    color: #ffe200;
+    color: #662d91;
 }
 .action-blog {
-  border-bottom: 1px solid #ffe200;
+  border-bottom: 1px solid #662d91;
   padding-top: 48px;
 }
 .comment-title > p,.comment-form-title > p {
@@ -1078,7 +1079,7 @@ selectorSavingError {
     text-transform: uppercase;
 }
 .comment-title > p:before,.comment-form-title > p:before {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 1px;
@@ -1125,7 +1126,7 @@ selectorSavingError {
   margin-bottom: 11px;
 }
 .comment-reply > a i {
-  color: #ffe200;
+  color: #662d91;
   margin-right: 5px;
 }
 .comment-reply > a{
@@ -1179,8 +1180,8 @@ selectorSavingError {
     overflow: hidden;
 }
 .comment-submit > button {
-    background: #ffe200 none repeat scroll 0 0;
-    border: 1px solid #ffe200;
+    background: #662d91 none repeat scroll 0 0;
+    border: 1px solid #662d91;
     color: #ffffff;
     font-weight: bold;
     height: 35px;
@@ -1194,10 +1195,10 @@ selectorSavingError {
 }
 .comment-submit > button:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    color: #ffe200;
+    color: #662d91;
 }
 .widget-title > h6 {
-    border-left: 5px solid #ffe200;
+    border-left: 5px solid #662d91;
     color: #222222;
     font-size: 12px;
     line-height: 10px;
@@ -1279,12 +1280,12 @@ selectorSavingError {
     margin: 0;
 }
 selectorSavingError {
-    background: #ffe200 none repeat scroll 0 0;
+    background: #662d91 none repeat scroll 0 0;
     color: #ffffff;
 }
 .widget-list li:hover {
-    background: #ffe200 none repeat scroll 0 0;
-    border-color: #ffe200;
+    background: #662d91 none repeat scroll 0 0;
+    border-color: #662d91;
 }
 .widget-list li:hover a {
     color: #ffffff;
@@ -1334,10 +1335,10 @@ selectorSavingError {
   overflow: hidden;
 }
 .form-bottom textarea:focus,.input-field > input:focus,.contact-form-bottom textarea:focus {
-  border-color: #ffe200;
+  border-color: #662d91;
 }
 .post-like p a:hover, .post-comment > p a:hover,.categories-list li a:hover{
-  color: #ffe200;
+  color: #662d91;
 }
 /*----------
     Mobile menu css here
@@ -1363,7 +1364,7 @@ selectorSavingError {
   font-weight: 600;
 }
 .mean-container .mean-nav ul li a:hover {
-  color: #ffe200;
+  color: #662d91;
 }
 .mean-container .mean-nav {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
@@ -1372,7 +1373,7 @@ selectorSavingError {
   18. 404 page css
 -------------------------*/
 .error-content h2 {
-  color: #ffe200;
+  color: #662d91;
   font-family: "Lato",sans-serif;
   font-size: 180px;
   font-weight: bold;
@@ -1380,7 +1381,7 @@ selectorSavingError {
   text-shadow: 7px 6px 0 #dadada, 0 -1px 0 #dadada, 1px -1px 0 #dadada, -1px 1px 0 #dadada, 1px 1px 0 #dadada;
 }
 .error-content > h3 {
-    color: #ffe200;
+    color: #662d91;
     font-size: 55px;
     font-weight: 500;
     text-transform: capitalize;
@@ -1391,7 +1392,7 @@ selectorSavingError {
     text-transform: capitalize;
 }
 .error-content .go-home {
-  background: #ffe200 none repeat scroll 0 0;
+  background: #662d91 none repeat scroll 0 0;
   border-radius: 5px;
   color: #ffffff;
   display: inline-block;
@@ -1408,7 +1409,7 @@ selectorSavingError {
     19. Scrollup css
 ---------------------*/
 #scrollUp {
-  background: #FFE200 none repeat scroll 0 0;
+  background: #662d91 none repeat scroll 0 0;
   bottom: 45px;
   color: #ffffff;
   cursor: pointer;

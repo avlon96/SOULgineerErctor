@@ -5,10 +5,13 @@ NOTE: This is Header style file. All Header related style included in this file.
 
 --------------------------------------*/
 header.header {
-  background: rgba(255, 248, 248, 0.4) none repeat scroll 0 0;
-  position: absolute;
   width: 100%;
-  z-index: 999;
+  position: sticky;
+  top: 0;
+  background-color: white; /* Optional: Set a background color */
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 10px; /* Optional: Add padding for better spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .menu ul > li {
   display: inline-block;
@@ -17,7 +20,7 @@ header.header {
   position: relative;
 }
 .menu ul > li:hover > a {
-  color: #FFE200;
+  color: #662d91;
 }
 .menu {
     text-align: center;
@@ -56,7 +59,7 @@ header.header {
 }
 .menu ul > li > ul {
   background: #fff none repeat scroll 0 0;
-  border-bottom: 2px solid #ffe200;
+  border-bottom: 2px solid #662d91;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
   left: 0;
   opacity: 0;
