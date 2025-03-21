@@ -11,8 +11,8 @@ NOTE: This is slider style file. All Header related style included in this file.
 
 #mainSlider img {
   width: 600px;  
-  height: 700px; 
-  transition: transform 3s ease-in-out;
+  height: 600px; 
+  /* transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) ease-in-out; */
   object-fit: cover; 
   animation: zoomEffect 10s infinite alternate ease-in-out;
 }
@@ -42,12 +42,12 @@ NOTE: This is slider style file. All Header related style included in this file.
   top: 41.5%;
   z-index: 99;
 }
-.slide-caption-img {
+/* .slide-caption-img {
   display: inline-block;
   float: right;
   position: relative;
   z-index: 9;
-}
+} */
 /* x */
 .nivo-controlNav {
   bottom: 45px;
