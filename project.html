@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Erctor | Project</title>
+    <title>SOULgineer</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link href="img/apple-touch-icon.png" type="images/x-icon" rel="shortcut icon">
+    <link href="img/logo/mainLogo.png" type="images/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/core.css">
@@ -18,51 +18,73 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
 
-<body>
-    <!--[if lt IE 8]>
+<!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->  
+    <![endif]-->
 
-    <!--Header section start-->
-    <header class="header">
-        <div class="header-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 hidden-sm hidden-xs">
-                        <div class="menu">
-                            <nav>
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="project.html">Projects</a></li>
-                                    <li class="logo"><a href="index.html"><img src="img/logo/mainLogo.png" alt="logo"
-                                                height="150" width="200"></a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact-us.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile menu start -->
-            <div class="mobile-menu-area hidden-lg hidden-md">
-                <div class="container">
-                    <div class="col-md-12">
-                        <nav id="dropdown">
+<!--Header section start-->
+<header class="header">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 hidden-sm hidden-xs">
+                    <div class="menu">
+                        <nav>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="#">pages</a>
-                                    <ul class="dropdown_menu">
-                                        <li><a href="project.html">project</a></li>
-                                        <li><a href="blog.html">blog</a></li>
-                                        <li><a href="blog-details.html">blog details</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
-                                        <li><a href="404.html">404 page</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="project.html">Projects</a></li>
+                                <li><a href="project.html">Gallery</a></li>
+                                <li class="logo"><a href="index.html"><img src="img/logo/mainLogo.png" alt="logo"
+                                            height="150" width="200"></a></li>
                                 <li><a href="blog.html">Blog</a></li>
                                 <li><a href="contact-us.html">Contact</a></li>
                             </ul>
@@ -70,874 +92,146 @@
                     </div>
                 </div>
             </div>
-            <!-- Mobile menu end -->
         </div>
-    </header>
-    <!--Header section end-->
-    <!--Breadcrumbs start -->
-    <div class="breadcrumbs overlay">
-        <div class="container">
-            <div class="row">
+        <!-- Mobile menu start -->
+        <div class="mobile-menu-area hidden-lg hidden-md">
+            <div class="container">
                 <div class="col-md-12">
-                    <div class="breadcrumbs-inner">
-                        <div class="breadcrumbs-title text-center">
-                            <h2>our project</h2>
-                        </div>
-                        <div class="breadcrumbs-menu">
-                            <ul>
-                                <li><a href="#">home</a></li>
-                                <li>// our project</li>
-                            </ul>
-                        </div>
+                    <nav id="dropdown">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">pages</a>
+                                <ul class="dropdown_menu">
+                                    <li><a href="project.html">gallery</a></li>
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li><a href="blog-details.html">blog details</a></li>
+                                    <li><a href="contact-us.html">contact us</a></li>
+                                    <li><a href="404.html">404 page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="project.html">gallery</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu end -->
+    </div>
+</header>
+<!--Header section end-->
+<!--Breadcrumbs start -->
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs-inner">
+                    <div class="breadcrumbs-title text-center">
+                        <h2>our project gallery</h2>
+                    </div>
+                    <div class="breadcrumbs-menu">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li>// our project gallery</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Breadcrumbs end-->
-    <!--Services section start-->
-    <div class="services-pages pt-110">
-        <div class="container">
+</div>
+<!--Breadcrumbs end-->
+<!--Services section start-->
+<div class="services-pages pt-110">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-title text-center">
+                    <h2>our project gallery</h2>
+                    <p>These images showcase our structural engineering expertise through the design and development
+                        of a structure.
+                        From initial concept to final construction, we provided innovative and cost-effective
+                        solutions that ensured
+                        safety, durability, and compliance with all regulatory standards.</p>
+                </div>
+            </div>
+        </div>
+        <!--Services desc- inner-->
+        <div class="our-project-page-inner">
             <div class="row">
-                <div class="col-md-offset-3 col-md-6">
-                    <div class="section-title text-center">
-                        <h2>our projetc</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed djhyhdo eiusmod tempor incididunt ut labore et dolore magna aliqua.       </p>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/project/c1.JPG">
+                            <img src="img/project/c1.JPG" alt="Cinque Terre" width="600" height="400">
+                        </a>
                     </div>
                 </div>
+
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/project/c2.JPG">
+                            <img src="img/project/c2.JPG" alt="Forest" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/project/c6.JPG">
+                            <img src="img/project/c6.JPG" alt="Northern Lights" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/project/c5.JPG">
+                            <img src="img/project/c5.JPG" alt="Mountains" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                &nbsp;
+                <br>
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="img/project/c4.JPG">
+                            <img src="img/project/c4.JPG" alt="Mountains" width="600" height="400">
+                        </a>
+                    </div>
+                </div>
+                <br>
+                &nbsp;
+                <div class="clearfix"></div>
+                &nbsp;
+
+
             </div>
-            <!--Services desc- inner-->
-            <div class="our-project-page-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="our-project-tab-menu text-center">
-                            <ul role="tablist">
-                                <li role="presentation" class="active"><a href="#all" aria-controls="all" data-toggle="tab">All </a></li>
-                                <li role="presentation"><a aria-controls="town" href="#town" data-toggle="tab">Town House </a></li>
-                                <li role="presentation"><a aria-controls="holiday" href="#holiday" data-toggle="tab">Holyday House</a></li>
-                                <li role="presentation"><a aria-controls="terrace" href="#terrace" data-toggle="tab">Terrace House</a></li>
-                                <li role="presentation"><a aria-controls="video" href="#video" data-toggle="tab">Video</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="col-md-12">
-                        <div class="project-tab-descriptio">
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="all">
-                                    <div class="project-banner-desc overlay">
-                                        <div class="project-banner-inner">
-                                            <div class="project-text">
-                                                <div class="banner-top-text">
-                                                    <h3>Dummy Title Of Projects</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                </div>
-                                            </div>
-                                            <div class="project_view">
-                                                <a href="#">view more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="project-list-inner">
-                                       <div class="row">
-                                            <div class="project_list">
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="town">
-                                    <div class="project-banner-desc overlay">
-                                        <div class="project-banner-inner">
-                                            <div class="project-text">
-                                                <div class="banner-top-text">
-                                                    <h3>Dummy Title Of Projects</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                </div>
-                                            </div>
-                                            <div class="project_view">
-                                                <a href="#">view more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="project-list-inner">
-                                       <div class="row">
-                                            <div class="project_list">
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane" id="holiday">
-                                    <div class="project-banner-desc overlay">
-                                        <div class="project-banner-inner">
-                                            <div class="project-text">
-                                                <div class="banner-top-text">
-                                                    <h3>Dummy Title Of Projects</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                </div>
-                                            </div>
-                                            <div class="project_view">
-                                                <a href="#">view more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="project-list-inner">
-                                       <div class="row">
-                                            <div class="project_list">
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                                <div class="single-project-display">
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-1.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-2.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-3.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                    <div class="single_project fix">
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-img">
-                                                                <img src="img/project/p-4.jpg" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="single_project-content">
-                                                                <div class="project-text">
-                                                                    <div class="banner-top-text">
-                                                                        <h3>Dummy Title Of Projects</h3>
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dofri eiusmod tempor incididunt ut labore et dolore magn a aliqua. Ut enim ajuthd minim veniam, quis nostrud exercitatiosit amet</p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="project_view">
-                                                                    <a href="#">view more</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>       
-                                                    </div>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Services desc- inner end-->
+            &nbsp;
+
         </div>
     </div>
-    <!--Services section end-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Services desc- inner end-->
+</div>
+</div>
+<!-- Services section end -->
 
-   <!--Footer section start-->
-   <footer class="footer-area overlay">
+
+<!--Footer section start-->
+<footer class="footer-area overlay">
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -948,8 +242,7 @@
                         </div>
                         <div class="single-footer-desc">
                             <div class="single-footer-logo">
-                                <a href="#"><img src="img/logo/mainLogo.png" alt="logo" width="150"
-                                        height="100"></a>
+                                <a href="#"><img src="img/logo/mainLogo.png" alt="logo" width="150" height="100"></a>
                             </div>
                             <div class="single-footer-content">
                                 <p>We are a structural engineering firm dedicated to designing safe, efficient, and
@@ -972,7 +265,7 @@
                             <div class="single-footer-nav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="project.html">Projects</a></li>
+                                    <li><a href="project.html">Gallery</a></li>
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="contact-us.html">Contact</a></li>
                                 </ul>
@@ -1011,25 +304,29 @@
                 </div>
             </div>
         </div>
+
     </div>
+    </div>
+    </div>
+
 </footer>
 <!--Footer section end-->
-   
-    
-   <!-- Placed js at the end of the document so the pages load faster -->
 
-    <!-- All jquery file included here -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nivo.slider.pack.js"></script>
-     <script src="js/isotope.pkgd.min.js"></script>
-     <script src="js/packery-mode.pkgd.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+
+<!-- All jquery file included here -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nivo.slider.pack.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/packery-mode.pkgd.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
